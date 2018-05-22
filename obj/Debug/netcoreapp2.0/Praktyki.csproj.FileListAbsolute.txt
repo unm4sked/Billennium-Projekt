@@ -1,0 +1,11 @@
+/home/ukasz/dotnet/Praktyki/bin/Debug/netcoreapp2.0/Praktyki.deps.json
+/home/ukasz/dotnet/Praktyki/bin/Debug/netcoreapp2.0/Praktyki.runtimeconfig.json
+/home/ukasz/dotnet/Praktyki/bin/Debug/netcoreapp2.0/Praktyki.runtimeconfig.dev.json
+/home/ukasz/dotnet/Praktyki/bin/Debug/netcoreapp2.0/Praktyki.dll
+/home/ukasz/dotnet/Praktyki/bin/Debug/netcoreapp2.0/Praktyki.pdb
+/home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.csprojAssemblyReference.cache
+/home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.csproj.CoreCompileInputs.cache
+/home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.AssemblyInfoInputs.cache
+/home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.AssemblyInfo.cs
+/home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.dll
+/home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.pdb

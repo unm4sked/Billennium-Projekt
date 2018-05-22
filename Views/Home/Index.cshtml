@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <h2>@ViewData["Message"]</h2>
+</div>
+@model Praktyki.Models.InternModel
+
+<h1>Just do it!</h1>
+
+<div class="form-wrapper">
+    <form asp-action="Register" asp-controller="Home" method="POST"> 
+        <div class="input-group">
+            <label>First Name:</label>
+            <input id="FirstName" asp-for="FirstName" type="text" class="input">
+        </div>
+    
+        <div class="input-group">
+            <label>Last Name:</label>
+            <input id="LastName" asp-for="LastName" type="text" class="input" >
+        </div>
+
+        <div class="input-group">
+            <label >About me:</label>
+            <textarea id="About" asp-for="About" class="input" rows="4" cols="50"></textarea>
+        </div>
+    
+        <div class="input-group">
+            <button class="btn btn-success">Send</button>
+        </div>
+    </form>
+</div>
