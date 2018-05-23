@@ -1,13 +1,34 @@
 @model Praktyki.Models.InternModel
 
-<h1>Register</h1>
+@if (@ViewData["IsOk"] != null)
+{
+    <div class="space text-center alert alert-success">
+        @ViewData["TotalData"]
+    </div>
 
-<h2>Your data:</h2>
+    <div class="text-center">
+        <h2>Your data:</h2>
+    </div>
 
-<h3>First Name: @Model.FirstName</h3>
 
-<h3>Second Name: @Model.LastName</h3>
+    <table class="table table-striped space">
+        <tr>
+            <th>First name</th>
+            <th>Second name</th>
+            <th>About</th>
+        </tr>
+        <tr>
+            <th>@Model.FirstName</th>
+            <th>@Model.LastName</th>
+            <th>@Model.About</th>
+        </tr>
+    </table>
+}
+else
+{
+    <div class="space text-center alert alert-danger">
+        @ViewData["TotalData"]
+    </div>
 
-<h3>About: @Model.About</h3>
+}
 
-@ViewData["TotalData"]

@@ -34,13 +34,13 @@ namespace Praktyki.Controllers
                 return View("Index");
             }
             // check First, Last name not number or special character
-            if(!Regex.IsMatch(i.FirstName, @"^[a-zA-Z]+$") || !Regex.IsMatch(i.LastName, @"^[a-zA-Z]+$"))
+            if(!Regex.IsMatch(i.FirstName, @"^[a-zżźćńółęąśA-ZŻŹĆĄŚĘŁÓŃ]+$") || !Regex.IsMatch(i.LastName, @"^[a-zżźćńółęąśA-ZŻŹĆĄŚĘŁÓŃ]+$"))
             {
                 ViewData["Message"]="You must use only letters to FirstName, LastName fields";
                 return View("Index");
             }
             // check First, Last name in capital letters
-            if(!Regex.IsMatch(i.FirstName, @"^[A-Z][a-z]+$") || !Regex.IsMatch(i.LastName, @"^[A-Z][a-z]+$"))
+            if(!Regex.IsMatch(i.FirstName, @"^[A-ZŻŹĆĄŚĘŁÓŃ][a-zżźćńółęąś]+$") || !Regex.IsMatch(i.LastName, @"^[A-ZŻŹĆĄŚĘŁÓŃ][a-zżźćńółęąś]+$"))
             {
                 ViewData["Message"]="Name and surname begin with uppercase letters";
                 return View("Index");
@@ -58,13 +58,16 @@ namespace Praktyki.Controllers
                 //SqlCommand cmd = new SqlCommand("CREATE TABLE Interns1 ( ID int NOT NULL IDENTITY (1,1) PRIMARY KEY,LastName varchar(255) NOT NULL, FirstName varchar(255), About varchar(255)); ", connection);
                 string querry = "INSERT INTO Interns1 (LastName,FirstName,About) VALUES (@LastName,@FirstName,@About)";
                 SqlCommand cmd = new SqlCommand(querry, connection);
-                cmd.Parameters.AddWithValue("@LastName", "Abc");
-                cmd.Parameters.AddWithValue("@FirstName", "Abc");
-                cmd.Parameters.AddWithValue("@About", "Abc");
+                cmd.Parameters.AddWithValue("@LastName", i.LastName);
+                cmd.Parameters.AddWithValue("@FirstName", i.FirstName);
+                cmd.Parameters.AddWithValue("@About",i.About);
                 int x = cmd.ExecuteNonQuery();
                 if (x < 0)
-                    ViewData["TotalData"]="Error inserting data into Database!";
+                {
+                    ViewData["TotalData"] = "Error inserting data into Database!";
+                }
                 connection.Close();
+                ViewData["Isok"] = true;
                 ViewData["TotalData"] = "Your data has been correctly added to the database";
             }
             catch(Exception ex)
