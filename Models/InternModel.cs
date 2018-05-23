@@ -11,4 +11,9 @@ namespace Praktyki.Models
         public string About { get;  set; }
         public DateTime ReleaseDate { get;  set; }
     }
+    //Server=localhost\SQLEXPRESS01;Database=master;Trusted_Connection=True;
+    //--
+    //-- run below commmand from command prompt
+    //-- sqlcmd -S DESKTOP-R38A2KV\SQLEXPRESS01 -E
+    //--
 }

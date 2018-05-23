@@ -9,3 +9,14 @@
 /home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.AssemblyInfo.cs
 /home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.dll
 /home/ukasz/dotnet/Praktyki/obj/Debug/netcoreapp2.0/Praktyki.pdb
+C:\Users\Lukasz\Desktop\Projekt\bin\Debug\netcoreapp2.0\Praktyki.deps.json
+C:\Users\Lukasz\Desktop\Projekt\bin\Debug\netcoreapp2.0\Praktyki.runtimeconfig.json
+C:\Users\Lukasz\Desktop\Projekt\bin\Debug\netcoreapp2.0\Praktyki.runtimeconfig.dev.json
+C:\Users\Lukasz\Desktop\Projekt\bin\Debug\netcoreapp2.0\Praktyki.dll
+C:\Users\Lukasz\Desktop\Projekt\bin\Debug\netcoreapp2.0\Praktyki.pdb
+C:\Users\Lukasz\Desktop\Projekt\obj\Debug\netcoreapp2.0\Praktyki.csprojResolveAssemblyReference.cache
+C:\Users\Lukasz\Desktop\Projekt\obj\Debug\netcoreapp2.0\Praktyki.csproj.CoreCompileInputs.cache
+C:\Users\Lukasz\Desktop\Projekt\obj\Debug\netcoreapp2.0\Praktyki.AssemblyInfoInputs.cache
+C:\Users\Lukasz\Desktop\Projekt\obj\Debug\netcoreapp2.0\Praktyki.AssemblyInfo.cs
+C:\Users\Lukasz\Desktop\Projekt\obj\Debug\netcoreapp2.0\Praktyki.dll
+C:\Users\Lukasz\Desktop\Projekt\obj\Debug\netcoreapp2.0\Praktyki.pdb
