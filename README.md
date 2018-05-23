@@ -1,4 +1,5 @@
-# Projek
+# Rejestracja na praktyki w Billennium
+
 
 ![GitHub Logo](project_photo1.png)
 
